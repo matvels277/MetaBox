@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Ranks | MetaBox Minecraft</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0e0e0e;
+      color: #f0f0f0;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 30px;
+      font-size: 3em;
+      color: #03a3f9;
+    }
+    .rank-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .rank {
+      background: #1f1f1f;
+      padding: 20px;
+      margin: 0 20px;
+      border-radius: 10px;
+      width: 200px;
+      text-align: center;
+    }
+    .rank h2 {
+      margin-top: 0;
+    }
+    .paypal-button {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Buy Your Rank on MetaBox</h1>
+  <p>Select your rank below and complete the purchase using PayPal.</p>
+
+  <div class="rank-container">
+    <div class="rank">
+      <h2>VIP</h2>
+      <p>$1.99</p>
+      <!-- PayPal Button for VIP -->
+      <div class="paypal-button">
+        <!-- Replace YOUR_PAYPAL_ID with your actual PayPal email -->
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_VIP_BUTTON_ID">
+          <input type="submit" value="Buy VIP" class="button">
+        </form>
+      </div>
+    </div>
+
+    <div class="rank">
+      <h2>VIP+</h2>
+      <p>$3.49</p>
+      <!-- PayPal Button for VIP+ -->
+      <div class="paypal-button">
+        <!-- Replace YOUR_PAYPAL_ID with your actual PayPal email -->
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_VIP_PLUS_BUTTON_ID">
+          <input type="submit" value="Buy VIP+" class="button">
+        </form>
+      </div>
+    </div>
+
+    <div class="rank">
+      <h2>MetaVIP</h2>
+      <p>$5.99</p>
+      <!-- PayPal Button for MetaVIP -->
+      <div class="paypal-button">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="YOUR_PAYPAL_METAVIP_BUTTON_ID">
+          <input type="submit" value="Buy MetaVIP" class="button">
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
